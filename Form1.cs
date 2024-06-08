@@ -17,5 +17,17 @@ namespace ToDoList
             InitializeComponent();
         }
 
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("\tВеедений пароль і невірному форматі.\t \n \tСпробуйте наприклад: 1234");
+                throw;
+            }
+        }
     }
 }
